@@ -51,6 +51,9 @@ function reiniciarJuego() {
 	let seccionSeleccionarAtaque = document.getElementById('seleccionar-ataque');
 	seccionSeleccionarAtaque.style.display = 'none';
 
+	let seccionSeleccionarMascota = document.getElementById('seleccionar-mascota');
+	seccionSeleccionarMascota.style.display = 'flex';
+
 	cambiarEstadoBotones(true);
 }
 
@@ -162,9 +165,10 @@ let spanMascotaEnemigo = document.getElementById("mascota-enemigo"); //
   } else {
     spanMascotaEnemigo.innerHTML = 'Ratigueya'
   }
-
+    let seccionSeleccionarMascota = document.getElementById('seleccionar-mascota');
+	seccionSeleccionarMascota.style.display = 'none';
 	let seccionSeleccionarAtaque = document.getElementById('seleccionar-ataque');
-	seccionSeleccionarAtaque.style.display = 'block';
+	seccionSeleccionarAtaque.style.display = 'flex';
 
 	let seccionReiniciar = document.getElementById('reiniciar');
 	seccionReiniciar.style.display = 'block';
